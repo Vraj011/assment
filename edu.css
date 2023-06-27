@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#video{
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+}
+.overlay{
+    position: absolute;
+    /* height: 100%; */ 
+    width: 100%;
+}
+.inner{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: white;
+    padding-top: 15px;
+}
+#header{
+    background-color: rgba(255, 255, 255, 0.121);
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.edu{
+    color: white;
+    position: relative;
+    top: 15px;
+    left: 100px;
+    font-weight: 1000;
+    word-spacing: 5px;
+    font-size: 25px;
+}
+.black{
+    height: 115vh;
+    background-color: rgba(0, 0, 0, 0.685); 
+}
+#header ul li{
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    top: -25px;
+    left: 800px;
+    padding: 15px;
+    
+
+}
+#header ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+#header ul li  a:hover{
+    color:goldenrod;
+}
+#b1{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: rgba(151,2,2);
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    top: 20px;
+    font-weight: 600;
+}
+#red{
+    display: flex;
+    margin-top: 270px;
+    z-index: 1;
+    }
+.red-1{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-image: url(images/service-item-bg.jpg);
+    position: relative;
+    top: 90px;
+    
+}
+.red-2{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-image: url(images/service-item-bg.jpg);
+    position: relative;
+    top: 90px;
+    left: 50px;
+}
+.red-3{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-image: url(images/service-item-bg.jpg);
+    position: relative;
+    top: 90px;
+    left: 100px;
+}
+.icon-1{
+    width: 100px;
+    height: 100px;
+    background-image: url(images/service-icon-02.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 30px;
+    left: 170px;
+}
+.icon-2{
+    width: 100px;
+    height: 100px;
+    background-image: url(images/service-icon-03.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 30px;
+    left: 170px;
+}
+.icon-3{
+    width: 100px;
+    height: 100px;
+    background-image: url(images/service-icon-01.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 30px;
+    left: 170px;
+}
+.r1{
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+    left: 140px;
+    font-size: larger;
+}
+.r1{
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+    left: 140px;
+    font-size: larger;
+}
+.r1{
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+    left: 140px;
+    font-size: larger;
+}
+.rl-1{
+    margin-top: 40px;
+}
+.left{
+    width: 50px;
+    height: 50px;
+    background-image: url(images/prev.png);
+    background-repeat: no-repeat;
+    position: relative;
+    right: 100px;
+    top: -100px;
+}
+.right{
+    width: 50px;
+    height: 50px;
+    background-image: url(images/next.png);
+    background-repeat: no-repeat; 
+    position: relative;
+    left: 450px;
+    top: -100px;
+}
+/* design 1 */
+.img1{
+    /* width: 100%; */
+    height: 150vh;
+    background-image: url(images/meetings-bg.jpg);
+    position: relative;
+    top: 850px;
+    z-index: -3;
+}
+.box1{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    position: relative;
+    top: 200px;
+    left: 50px;
+    border-radius: 20px;
+    z-index: -2;
+}
+.meet{
+    position: relative;
+    top: -200px;
+    left: 100px;
+    z-index: 2;
+    font-size: larger;
+    font-weight: 600;
+}
+.he{
+    
+        position: relative;
+        top: -110px;
+        left: 100px;
+        z-index: 2;
+        line-height: 40px;
+        font-size: medium;
+        font-weight: 600;
+        
+}
+.line{
+    background-color: rgba(128, 128, 128, 0.482);
+    width: 300px;
+    height: 2px;
+    position: relative;
+    top: -350px;
+    left: 100px;
+}
+.line2{
+    background-color: rgba(128, 128, 128, 0.482);
+    width: 300px;
+    height: 2px;
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+#b2{
+    width: 300px;
+    height: 45px;
+    border: none;
+    background-color: rgba(151,2,2);
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    top: -85px;
+    left: 100px;
+    font-weight: 600;
+}
+
+/* 4 white boxes  */
+
+#box{
+    display: flex;
+    
+}
+#box2{
+    display: flex;
+}
+/* .mbox1{
+    width: 400px;
+    height:100px;
+    background-repeat: no-repeat;
+    background-image: url(images/meeting-01.jpg);
+} */
+.box-1{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    background-image: url(images/meeting-01.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -520px;
+    left: 600px;
+    border-radius: 20px;
+}
+.box-2{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    background-image: url(images/meeting-02.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -520px;
+    left: 620px;
+    border-radius: 20px;
+}
+.box-3{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    background-image: url(images/meeting-03.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -500px;
+    left: 600px;
+    border-radius: 20px;
+}
+.box-4{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    background-image: url(images/meeting-04.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -500px;
+    left: 620px;
+    border-radius: 20px;
+}
+/* second page  */
+.img{
+    height: 150vh;
+    background-image: url(images/apply-bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -475px;
+    z-index: -2;
+}
+.boxl-1{
+    width: 600px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.178);
+    position: relative;
+    top: -1400px;
+    left: 120px;
+}
+.boxl-2{
+    width: 600px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.178);
+    position: relative;
+    top: 200px;
+}
+.boxr{
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    position: relative;
+    top: -1660px;
+    left: 800px;
+    border-radius: 20px;
+}
+.be{
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+.belorem{
+    color: #fff;
+    font-size: medium;
+    position: relative;
+    top: 70px;
+    left: 50px;
+    line-height: 25px;
+}
+.join{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: rgba(151,2,2);
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    top: 100px;
+    left: 40px;
+    font-weight: 600;
+}
+.join1{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: goldenrod;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    top: 100px;
+    left: 40px;
+    font-weight: 600;
+}
+/* design 2 */
+
+.img2{
+    height: 100vh;
+    background-image: url(images/meetings-page-bg.jpg);
+    position: relative;
+    top: -1550px;
+}
+.our{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 40px;
+    left: 120px;
+}
+.l{
+    width: 1300px;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: 80px;
+    left: 120px;
+}
+.wb1{
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    background-image: url(images/course-01.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+}
+.wb2{
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    background-image: url(images/course-02.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    position: absolute;
+    top: 100px;
+    left: 450px;
+}
+.wb3{
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    background-image: url(images/course-03.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    position: absolute;
+    top: 100px;
+    left: 780px;
+}
+.wb4{
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    background-image: url(images/course-04.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    position: absolute;
+    top: 100px;
+    left: 1120px;
+}
+/* last img  */
+.img3{
+    height: 100vh;
+    background-image: url(images/facts-bg.jpg);
+    background-repeat: no-repeat;
+    margin-top: -1550px;
+}
+.last{
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+.lbox-1{
+    width: 300px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+.lbox-2{
+    width: 300px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 20px;
+    position: relative;
+    left: 120px;
+    top: 130px;
+}.lbox-3{
+    width: 300px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    top: 120px;
+}.lbox-4{
+    width: 300px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 20px;
+    position: relative;
+    left: 120px;
+    top: 150px;
+}
+#boxl-1{
+    display: flex;
+}
+#boxl-2{
+    display: flex;
+}
+.yellow{
+    height: 500px;
+    background-image: url(images/video-item-bg.jpg);
+    background-repeat: no-repeat;
+    /* position: relative;
+    left: 800px;
+    top: -350px; */
+    margin-top: -350px;
+    margin-left: 800px;
+}
+.play{
+    height: 100px;
+    background-image: url(images/play-icon.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 200px;
+    left: 260px;
+}
+/* design 3  */
+.img4{
+    height: 100vh;
+    background-image: url(images/meetings-bg.jpg);
+    background-repeat: no-repeat;
+    /* margin-top: -1550px; */
+}
+.b1{
+    width: 800px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative; 
+    top: 50px;
+    left: 100px;
+}
+.let{
+    font-weight: 600;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    font-size: 25px;
+}
+.n{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.n1{
+    position: relative;
+    top: 30px;
+    left: 300px;
+}
+.n2{
+    position: relative;
+    top: 10px;
+    left: 550px;
+}
+.r1{
+    width: 300px;
+    height: 450px;
+    background-color: rgba(151,2,2);
+    border-radius: 20px;
+    position: relative; 
+    top: -350px;
+    left: 950px;
+}
+.ph{
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+.ea{
+    color: white;
+    position: relative;
+    top: 90px;
+    left: 40px;
+}
+.st{
+    color: white;
+    position: relative;
+    top: 160px;
+    left: 40px;
+}
+.wu{
+    color: white;
+    position: relative;
+    top: 220px;
+    left: 40px;
+}
+.line3{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin-top: -310px;
+}
+.copy{
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 500px;
+}
+.l1{
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+.l2{
+    width: 120px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 40px;
+}
+.l3{
+    width: 140px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 320px;
+    left: 40px;
+}
+.l4{
+    width: 180px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 420px;
+    left: 40px;
+}
+/* laptop screen  */
+/* 
+@media (min-width:768px) and (max-width:1024px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    #video{
+        position:absolute;
+    width: 50%;
+    z-index: -2;
+    }      
+    .red-1{
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        background-image: url(images/service-item-bg.jpg);
+        position: relative;
+        top: 90px;
+        
+    }
+} */
