@@ -5,63 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <form action="">
-        <h1 style="text-align: center;">Responsive Registration <br> form</h1>
-        <table align="center">
-            <tr>
-                <td><input type="text" name="Email" value="Email" style="width: 300px; height: 25px;"></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="password" value="password" style="width: 300px; height: 25px;"></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="Re-type password" value="Re-type password"
-                        style="width: 300px; height: 25px;"></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="First name" value="First name" style="width: 120px; height: 25px;">
-                    <input type="text" name="Last name" value="Last name"
-                        style="width: 120px; height: 25px; margin-left: 50px;">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                   <input type="radio"> male
-                   <input type="radio">Female
-                </td>
-            </tr>
-<tr>
-    <td>
-        
-        <select name="select a country" value="select a country" style="align-content: center; width: 100%;height: 30px;">
-            <option value="India">India</option>
-            <option value="Russia">Russia</option>
-            <option value="America">America</option>
-        </select>
-    </td>
-</tr>
+    <div style="height: 500px; width: 500px; border-top: 5px solid orange; margin-left: 500px;">
+        <form method="post" action="" onsubmit="return ValidData()">
+            <h1 style="text-align: center;">Responsive Registration <br> form</h1>
+            <table align="center">
+                <tr>
+                    <td><i class="fa-solid fa-envelope"></i> <input type="email" name="Email" placeholder="Email"  id="Email"
+                            style="width: 300px; height: 25px;"></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-lock"></i><input type="text" name="password" placeholder="password"
+                            id="password" style="width: 300px; height: 25px;"></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-lock"></i><input type="text" name="Retypepassword" id="Retypepassword"
+                        placeholder="Re-type password" style="width: 300px; height: 25px;"></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-person"></i><input type="text" name="Firstname" placeholder="First name"
+                            id="Firstname" style="width: 120px; height: 25px;">
+                        <i class="fa-solid fa-person"></i> <input type="text" name="Lastname" placeholder="Lastname"
+                            id="Lastname" style="width: 120px; height: 25px; ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio"> male
+                        <input type="radio">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
 
-<tr>
-    <td>
-        <input type="checkbox" name="" id="">
-        I agree with terms and conditions
-    </td>
-    </tr>
-    <tr>
-    <td>
-        <input type="checkbox" name="" id="">
-        I want to receive the newsletter
-    </td>
-</tr>
-<tr>
-    <td><input type="submit" value="Register" style="width: 100%; height: 30px; background-color: orange;"></td>
-</tr>
+                        <select name="select a country" value="select a country"
+                            style="align-content: center; width: 100%;height: 30px;">0
+                            <option value="India">India</option>
+                            <option value="Russia">Russia</option>
+                            <option value="America">America</option>
+                        </select>
+                    </td>
+                </tr>
 
-        </table>
-    </form>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                        I agree with terms and conditions
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                        I want to receive the newsletter
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Register"
+                            style="width: 100%; height: 30px; background-color: orange;"></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <script>
+        function ValidData() {
+            var Email = document.getElementById('Email').value;
+            if (Email == "") {
+                alert("please enter Email");
+                document.getElementById('Email').focus();
+                return false;
+            }
+            var password = document.getElementById('password').value;
+            if (password == "") {
+                alert("please enter password");
+                document.getElementById('password').focus();
+                return false;
+            }
+            var Retypepassword = document.getElementById('Retypepassword').value;
+            if (Retypepassword == "") {
+                alert("please enter Retypepassword");
+                document.getElementById('Retypepassword').focus();
+                return false;
+            }
+            var Firstname = document.getElementById('Firstname').value;
+            if (Firstname == "") {
+                alert("please enter First name");
+                document.getElementById('Firstname').focus();
+                return false;
+            }
+            var Lastname = document.getElementById('Lastname').value;
+            if (Lastname == "") {
+                alert("please enter Last name");
+                document.getElementById('Lastname').focus();
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>
