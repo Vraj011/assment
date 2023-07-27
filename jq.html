@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action=""  onsubmit="return valid()">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" placeholder="enter your name" id="form"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" placeholder="enter your name" id="form"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" placeholder="enter your email" name="" id="form"></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="text" placeholder="only 10digit are allowed" name="" id="form"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="" id="form">male
+                    <input type="radio" name="" id="form">female
+                </td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td><input type="date" id="form"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="" id="form" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" id="form"></td>
+            </tr>
+            <tr>
+                <td>Area Pin:</td>
+                <td><input type="text" id="form"></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" id="form"></td>
+            </tr>
+            <tr>
+                <td>Specialization</td>
+                <td>
+                    <input type="checkbox" name="" id="form">C.S <br>
+                    <input type="checkbox" name="" id="form">I.T <br>
+                    <input type="checkbox" name="" id="form">Computer Architecture <br>
+                    <input type="checkbox" name="" id="form">Tele Comunication
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="" id="form"></td>
+            </tr>
+            <tr>
+                <td><button style="background-color: green; color: white; width: 100px; height: 30px;">Register</button></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function valid() {
+            let form = document.getElementById('form').value;
+            if (form == "") {
+                alert("please enter valid field")
+                document.getElementById('form').focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
